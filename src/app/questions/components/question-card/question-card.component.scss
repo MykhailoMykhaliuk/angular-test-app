@@ -1,0 +1,13 @@
+.question-card {
+  margin-bottom: 5px;
+
+  &__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    margin-left: 20px;
+    min-width: 120px;
+  }
+}

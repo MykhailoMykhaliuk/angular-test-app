@@ -1,0 +1,14 @@
+<mat-card class="question-card">
+  <mat-card-header>
+    <mat-card-title>{{ question.title }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="question-card__content-wrapper">
+      <p>{{ question.description.answer }}</p>
+      <div class="question-card__info">
+        <la-views [views]="question.views"></la-views>
+        <la-answer-date [date]="question.date.created"></la-answer-date>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

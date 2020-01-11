@@ -1,0 +1,9 @@
+.views {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__count {
+    margin-right: 10px;
+  }
+}

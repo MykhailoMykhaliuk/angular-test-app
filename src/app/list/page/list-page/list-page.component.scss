@@ -1,0 +1,15 @@
+.list-page {
+  margin: 30px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+}

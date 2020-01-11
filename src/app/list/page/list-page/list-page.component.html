@@ -1,0 +1,27 @@
+<div class="list-page">
+
+  <div class="list-page__header">
+    <la-sort [sortBy]="queryParams.sortBy"
+             (sortingChanged)="onSortingChanged($event)">
+    </la-sort>
+
+    <la-pagination [total]="totalCount"
+                   [paginationConfig]="paginationConfig"
+                   (paginationChanged)="onPaginationChanged($event)">
+    </la-pagination>
+  </div>
+
+  <div *ngIf="!loading">
+    <ng-container *ngFor="let item of items">
+      <ng-template [ngTemplateOutlet]="customListItem"
+                   [ngTemplateOutletContext]="{item: item}">
+      </ng-template>
+    </ng-container>
+  </div>
+
+  <div *ngIf="loading"
+       class="list-page__spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+  
+</div>
